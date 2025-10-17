@@ -1,0 +1,209 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Mi Portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Mis Proyectos</h1>
+            
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <img src="img/proyectos/proyecto1.jpg" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sitio Web Corporativo</h5>
+                            <p class="card-text">
+                                Desarrollo de un sitio web completo para una empresa local, 
+                                incluyendo diseño responsive, formularios de contacto y galería de imágenes.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-info">CSS</span>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal1">Ver Detalles</button>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <img src="img/proyectos/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculadora Web</h5>
+                            <p class="card-text">
+                                Aplicación de calculadora interactiva con funciones básicas y avanzadas, 
+                                desarrollada completamente con JavaScript vanilla.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-info">CSS</span>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal2">Ver Detalles</button>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <img src="img/proyectos/proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Lista de Tareas</h5>
+                            <p class="card-text">
+                                Aplicación para gestionar tareas diarias con funcionalidad de agregar, 
+                                eliminar y marcar como completadas. Interfaz minimalista y funcional.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-info">CSS</span>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal3">Ver Detalles</button>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales para detalles de proyectos -->
+    <!-- Modal Proyecto 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sitio Web Corporativo - Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proyectos/proyecto1.jpg" class="img-fluid mb-3" alt="Proyecto 1">
+                    <h6>Descripción completa:</h6>
+                    <p>Este proyecto incluye múltiples páginas con información de la empresa, servicios, galería de imágenes y formulario de contacto funcional.</p>
+                    <h6>Tecnologías utilizadas:</h6>
+                    <ul>
+                        <li>HTML5 para la estructura</li>
+                        <li>CSS3 y Bootstrap para el diseño</li>
+                        <li>JavaScript para interactividad</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Calculadora Web - Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proyectos/proyecto2.jpg" class="img-fluid mb-3" alt="Proyecto 2">
+                    <h6>Descripción completa:</h6>
+                    <p>Calculadora funcional con operaciones básicas y funciones científicas. Interfaz amigable y responsive.</p>
+                    <h6>Características:</h6>
+                    <ul>
+                        <li>Operaciones matemáticas básicas</li>
+                        <li>Historial de cálculos</li>
+                        <li>Diseño responsive</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Lista de Tareas - Detalles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proyectos/proyecto3.jpg" class="img-fluid mb-3" alt="Proyecto 3">
+                    <h6>Descripción completa:</h6>
+                    <p>Aplicación para gestión de tareas con interfaz intuitiva y funcionalidades completas.</p>
+                    <h6>Funcionalidades:</h6>
+                    <ul>
+                        <li>Agregar nuevas tareas</li>
+                        <li>Marcar tareas como completadas</li>
+                        <li>Eliminar tareas</li>
+                        <li>Filtrar por estado</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="js/main.js"></script>
+</body>
+</html>
